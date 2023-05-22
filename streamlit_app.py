@@ -83,7 +83,7 @@ if submit_button:
 
   response = requests.post("http://127.0.0.1:8000/predict", params=payload).json()
   
-  response = response["prediction"][0]
+  response = response["prediction"]
 
   if response == 1:
         st.balloons()
